@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+  <contest name="Trial Round." problems="6" length="0">
+  <samples type="zip" url="http://mts.opencup.ru/~ejudge/team.cgi?SID=f10cbece57894232&amp;action=261"/>
+   <problem alias="A" name="Sum of Two">
+    <time_limit>1000</time_limit>
+    <memory_limit>536870912</memory_limit>
+    <source_limit>65536</source_limit>
+    <use_stdin/>
+    <use_stdout/>
+    <input_file>sum.in</input_file>
+    <output_file>sum.out</output_file>
+    <samples number="2"/>
+   </problem>
+   <problem alias="B" name="Product of Two">
+    <time_limit>1000</time_limit>
+    <memory_limit>536870912</memory_limit>
+    <source_limit>65536</source_limit>
+    <use_stdin/>
+    <use_stdout/>
+    <samples number="1"/>
+   </problem>
+   <problem alias="C" name="Real Quotient of Two">
+    <time_limit>1000</time_limit>
+    <memory_limit>536870912</memory_limit>
+    <source_limit>65536</source_limit>
+    <use_stdin/>
+    <use_stdout/>
+    <samples number="2"/>
+   </problem>
+   <problem alias="D" name="Guess a Number">
+    <time_limit>1000</time_limit>
+    <memory_limit>536870912</memory_limit>
+    <source_limit>65536</source_limit>
+    <use_stdin/>
+    <use_stdout/>
+   </problem>
+   <problem alias="E" name="Samples ZIP">
+    <time_limit>1000</time_limit>
+    <memory_limit>536870912</memory_limit>
+    <source_limit>65536</source_limit>
+    <use_stdin/>
+    <use_stdout/>
+    <samples number="1"/>
+   </problem>
+   <problem alias="F" name="Summary">
+    <time_limit>1717</time_limit>
+    <memory_limit>250609664</memory_limit>
+    <source_limit>65536</source_limit>
+    <use_stdin/>
+    <use_stdout/>
+   </problem>
+  </contest>
