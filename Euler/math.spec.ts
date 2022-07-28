@@ -1,4 +1,4 @@
-import { factorsOfNumber, sumArithmeticSequence } from './math';
+import { factorsOfNumber, sieveOfAtkin, sumArithmeticSequence } from './math';
 
 describe('Math helpers', () => {
   it('Делители числа', () => {
@@ -14,5 +14,10 @@ describe('Math helpers', () => {
   it('Сумма арифметической прогрессии', () => {
     expect(sumArithmeticSequence(1, 1, 1)).toEqual(1);
     expect(sumArithmeticSequence(1, 10, 1)).toEqual(55);
+  })
+
+  it('Решето Аткинса', ()=> {
+    expect(sieveOfAtkin(100)).toEqual([2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]);
+
   })
 });
