@@ -70,3 +70,13 @@ export const sieveOfAtkin = (limit: number): number[] => {
 
   return sieve.map((v, i) => (v ? i : v)).filter((v) => !!v) as number[];
 };
+
+export const sum = (arr: number[]): number => arr.reduce((s, v) => s + v, 0);
+
+export const range = (N: number, fillValue?: number): number[] => {
+  const arr = new Array(N).fill(fillValue);
+  if (fillValue === undefined) {
+    return [...arr.map((v, i) => i)];
+  }
+  return [...arr];
+};
