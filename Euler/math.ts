@@ -80,3 +80,27 @@ export const range = (N: number, fillValue?: number): number[] => {
   }
   return [...arr];
 };
+
+export function* permutation<T>(perm: T[]): Generator<T[]> {
+  const length = perm.length;
+  const c = Array(length).fill(0);
+  let i = 1;
+  let k;
+  let p;
+
+  yield perm.slice();
+  while (i < length) {
+    if (c[i] < i) {
+      k = i % 2 && c[i];
+      p = perm[i];
+      perm[i] = perm[k];
+      perm[k] = p;
+      ++c[i];
+      i = 1;
+      yield perm.slice();
+    } else {
+      c[i] = 0;
+      ++i;
+    }
+  }
+}
