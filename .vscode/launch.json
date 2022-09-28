@@ -12,13 +12,19 @@
       "type": "node"
     },
     {
-      "name": "ts-node",
+      "name": "TS run",
       "type": "node",
       "request": "launch",
       "args": ["${relativeFile}"],
       "runtimeArgs": ["-r", "ts-node/register"],
       "cwd": "${workspaceRoot}",
       "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "command": "npm test",
+      "name": "Run tests",
+      "request": "launch",
+      "type": "node-terminal"
     }
   ]
 }

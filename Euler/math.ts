@@ -12,6 +12,11 @@ export const factorsOfNumber = (n: number): number[] => {
   return [...new Set(result)].sort((a, b) => a - b);
 };
 
+// Собственные делители числа
+export const properDivisors = (n: number): number[] => {
+  return factorsOfNumber(n).filter((v) => v !== n);
+};
+
 // Сумма арифметической прогрессии
 export const sumArithmeticSequence = (start: number, count: number, step = 1): number => {
   return (start + (step * (count - 1)) / 2) * count;
