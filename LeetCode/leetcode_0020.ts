@@ -26,6 +26,37 @@
 // 1 <= s.length <= 104
 // s consists of parentheses only '()[]{}'.
 
+
+
+/**
+Дана строка, состоящая исключительно из символов '(', ')', '{', '}', '[', ']'. Проверить валидность строки.
+Валидность означает:
+- Скобка открытия должна иметь скобку закрытия.
+- Скобка закрытия дожна иметь скобку открытия.
+- Каждая закрывающая скобка имеет соответствующую открытую скобку того же типа.
+
+Example 1:
+Input: s = "()"
+Output: true
+
+Example 2:
+Input: s = "()[]{}"
+Output: true
+
+Example 3:
+Input: s = "(]"
+Output: false
+
+Ограничения:
+1 <= s.length <= 104
+s содержит только символы '()[]{}'.
+*/
+
+// function isValid(s: string): boolean {
+// }
+
+
+
 function isValid(s: string): boolean {
   let len = s.length;
   while (true) {
