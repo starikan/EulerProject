@@ -66,6 +66,9 @@ Output: []
 Все элементы candidates различны.
 1 <= target <= 40
  */
+// function combinationSum(candidates: number[], target: number): number[][] {
+//   return 0;
+// }
 
 
 function combinationSum(candidates: number[], target: number): number[][] {
