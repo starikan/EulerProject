@@ -33,6 +33,7 @@ All elements of candidates are distinct.
 1 <= target <= 40
 */
 
+// ===========================================================
 
 /**
 Дан массив уникальных целых чисел candidates и целое число target. Вернуть список всех уникальных комбинаций чисел из
@@ -70,23 +71,24 @@ Output: []
 //   return 0;
 // }
 
+// ===========================================================
 
 function combinationSum(candidates: number[], target: number): number[][] {
   const result: number[][] = [];
 
   function backtrack(start: number, currSum: number, path: number[]): void {
-      if (currSum === target) {
-          result.push([...path]); // Append a copy of the path to the result
-          return;
-      } else if (currSum > target) {
-          return;
-      }
+    if (currSum === target) {
+      result.push([...path]); // Append a copy of the path to the result
+      return;
+    } else if (currSum > target) {
+      return;
+    }
 
-      for (let i = start; i < candidates.length; i+=1) {
-          path.push(candidates[i]);
-          backtrack(i, currSum + candidates[i], path); // Use the current candidate
-          path.pop(); // Backtrack by removing the last added element
-      }
+    for (let i = start; i < candidates.length; i += 1) {
+      path.push(candidates[i]);
+      backtrack(i, currSum + candidates[i], path); // Use the current candidate
+      path.pop(); // Backtrack by removing the last added element
+    }
   }
 
   candidates.sort((a, b) => a - b); // Sort the candidates to avoid duplicates and optimize backtracking
