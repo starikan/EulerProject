@@ -6,7 +6,6 @@
 // Open brackets must be closed in the correct order.
 // Every close bracket has a corresponding open bracket of the same type.
 
-
 // Example 1:
 
 // Input: s = "()"
@@ -20,13 +19,10 @@
 // Input: s = "(]"
 // Output: false
 
-
 // Constraints:
 
 // 1 <= s.length <= 104
 // s consists of parentheses only '()[]{}'.
-
-
 
 /**
 Дана строка, состоящая исключительно из символов '(', ')', '{', '}', '[', ']'.
@@ -52,6 +48,10 @@ Example 4:
 Input: s = "([)]"
 Output: false
 
+Example 5:
+Input: s = "({{}})"
+Output: true
+
 Ограничения:
 1 <= s.length <= 104
 s содержит только символы '()[]{}'.
@@ -65,8 +65,6 @@ s содержит только символы '()[]{}'.
 // console.log(isValid("()[]{}") === true);
 // console.log(isValid("(]") === false);
 // console.log(isValid("([)]") === false);
-
-
 
 function isValid(s: string): boolean {
   let len = s.length;
@@ -116,8 +114,6 @@ function isValid(s: string): boolean {
 
 //   return openCount === 0; // if the counter is zero, return true, else false
 // }
-
-
 
 // function isValid(s: string): boolean {
 //   const stack: string[] = [];
