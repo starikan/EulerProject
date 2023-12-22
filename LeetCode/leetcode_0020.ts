@@ -24,10 +24,7 @@
 // 1 <= s.length <= 104
 // s consists of parentheses only '()[]{}'.
 
-
-
 // ===========================================================
-
 
 /**
 Дана строка, состоящая исключительно из символов '(', ')', '{', '}', '[', ']'.
@@ -70,11 +67,9 @@ s содержит только символы '()[]{}'.
 // console.log(isValid("()[]{}") === true);
 // console.log(isValid("(]") === false);
 // console.log(isValid("([)]") === false);
-
-
+// console.log(isValid("({{}})") === true);
 
 // ===========================================================
-
 
 function isValid(s: string): boolean {
   let len = s.length;
